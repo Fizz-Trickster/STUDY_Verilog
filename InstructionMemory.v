@@ -1,5 +1,5 @@
 module InstructionMemory(
-    input           clk,
+    input           mem_clk,
     input   [31:0]  read_addr,
     output  [31:0]  o_instruction
 );
