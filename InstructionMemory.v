@@ -1,6 +1,7 @@
 module InstructionMemory(
-    input           mem_clk,
-    input   [31:0]  read_addr,
+    input           i_mem_clk,
+    input           i_rst_n,
+    input   [31:0]  i_read_addr,
     output  [31:0]  o_instruction
 );
 
@@ -10,6 +11,6 @@ module InstructionMemory(
         $readmemh("vectors.txt", data);
     end
 
-    assign o_instruction = {data[read_addr],data[read_addr+1],data[read_addr+2],data[read_addr+3]};  
+    assign o_instruction = {data[i_read_addr],data[i_read_addr+1],data[i_read_addr+2],data[i_read_addr+3]};  
 
 endmodule
