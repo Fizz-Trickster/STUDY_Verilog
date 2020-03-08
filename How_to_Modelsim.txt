@@ -1,0 +1,11 @@
+How to run Modelsim
+
+1. File > New > Project 
+
+2. Project > Add to Project > Existing File
+
+3. Compile > Compile All
+
+4. Simulate 
+
+5. run command 
