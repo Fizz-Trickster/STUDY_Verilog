@@ -10,8 +10,7 @@ localparam  T_WIDTH = 14;
 
     always #10 i_clk = ~i_clk;
 
-    adder #(T_WIDTH) u_adder
-    (
+    adder #(T_WIDTH) u_adder (
            .i_clk               (i_clk              
         ), .i_rst_n             (i_rst_n             
         ), .i_a                 (i_a
@@ -28,7 +27,6 @@ localparam  T_WIDTH = 14;
         #24 i_a     = 20;
         #42 i_b     = 70;
 
-//        #100;
         repeat (4) @(posedge i_clk);
         $finish;
     end
