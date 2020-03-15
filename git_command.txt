@@ -11,3 +11,7 @@ This is git Command example file.
 3. [commit] Command
     => git commit -m "log message"
     ex) git commit -m "Add file git_command.txt"
+
+4. [reset] Command
+    => git reset HEAD <file>
+    ex) git reset HEAD git_command.txt
